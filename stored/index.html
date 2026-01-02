@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comment Board</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 600px;
+            margin: 50px auto;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 20px;
+        }
+        .comment-box {
+            background: #16213e;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 3px solid #e94560;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: #0f0f23;
+            border: 1px solid #333;
+            color: #fff;
+        }
+        button {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        h1 { color: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>💬 Comment Board</h1>
+    
+    <input type="text" id="name" placeholder="Your name">
+    <textarea id="comment" placeholder="Write a comment..." rows="3"></textarea>
+    <button onclick="postComment()">Post Comment</button>
+    
+    <h2>Comments</h2>
+    <div id="comments"></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
